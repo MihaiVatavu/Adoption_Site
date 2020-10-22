@@ -1,0 +1,101 @@
+$white:#ffffff;
+$black:#000000;
+$color:#39B89E;
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+// Header
+
+.header{
+  width:100%;
+
+  .navbar{
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav{
+    width:30%;
+
+  }
+
+  .list{
+    display:flex;
+    justify-content: space-around;
+  }
+
+  li{
+    list-style: none;
+    padding:5px;
+  }
+
+  li:hover{
+    padding:0;
+    border-bottom:5px solid $color ;
+  }
+
+  li:first-child{
+    border-bottom:5px solid $color 
+  }
+  li > a{
+    text-decoration: none;
+    color: $black;
+  }
+
+  .logo{
+    margin-left:75px ;
+  }
+}
+
+// Main section
+main{
+  width:100%;
+  height:60vh;
+  margin:40px 50px;
+}
+
+.left{
+  padding-left:25px;
+  width:50%;
+
+  .hero-title{
+    font-size:100px;
+    font-weight: 200;
+  }
+
+  .hero-title span{
+    font-size:100px;
+    font-weight: 600;
+    color:$color;
+  }
+
+  .cta{
+    margin-top:50px;
+    padding:10px 50px;
+    background-color: $color;
+    border:none;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px;
+  }
+
+  .cta a{
+    color:$white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+
+// Title and call to action
+
+
+
