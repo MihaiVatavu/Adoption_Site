@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/Assets/fruandfluff2.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2f0d8ac516.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="/css/style.css">
   <title>Fur and fluff</title>
 </head>
 
 <body class="home">
+
+  <!-- Header -->
   <header class="header">
     <div class="navbar">
       <div class="logo">
@@ -17,14 +20,14 @@
       </div>
       <nav>
         <ul class="list">
-          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="index.html">Home</a></li>
           <li><a href="adopt.html">Adopt</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
+  <!-- Main section -->
   <main>
     <section class="left">
       <h1 class="hero-title">
@@ -34,9 +37,41 @@
       </h1>
       <button class="cta"><a href="about.html">Contact Us</a></button>
     </section>
+    <section class="right">
+      <img src="/Assets/dog_one.jpg" alt="Dog image" class="front-image">
+    </section>
   </main>
+  <!-- Testimonial-->
+  <div class="testimonial-wrapper">
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <img src="/Assets/cat_one.jpg" class="test-img">
+        <p class="test"> the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen
+          book. It has survived not only five centuries</p>
+      </div>
 
-  <script src="https://kit.fontawesome.com/2f0d8ac516.js" crossorigin="anonymous"></script>
+      <div class="testimonial">
+        <img src="/Assets/cat_two.jpg" class="test-img">
+        <p class="test"> the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen
+          book. It has survived not only five centuries</p>
+      </div>
+
+      <div class="testimonial">
+        <img src="/Assets/cat_three.jpg" class="test-img">
+        <p class="test"> the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen
+          book. It has survived not only five centuries</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <i class="fab fa-twitter fa-2x"></i>
+    <i class="fab fa-facebook fa-2x"></i>
+    <i class="fab fa-instagram fa-2x"></i>
+  </footer>
 </body>
 
 </html>

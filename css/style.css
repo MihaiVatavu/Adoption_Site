@@ -5,15 +5,16 @@
           box-sizing: border-box;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 .header {
-  width: 100%;
+  width: 90%;
 }
 
 .header .navbar {
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +48,7 @@
   border-bottom: 5px solid #39B89E;
 }
 
-.header li:first-child {
+.header .current {
   border-bottom: 5px solid #39B89E;
 }
 
@@ -62,8 +63,11 @@
 
 main {
   width: 100%;
-  height: 60vh;
-  margin: 40px 50px;
+  height: 50vh;
+  margin: 35px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .left {
@@ -72,7 +76,7 @@ main {
 }
 
 .left .hero-title {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 200;
 }
 
@@ -96,4 +100,75 @@ main {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
+}
+
+.right {
+  top: 20px;
+}
+
+.right .front-image {
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 90px;
+}
+
+.testimonial-wrapper {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.testimonial-container {
+  max-width: 100%;
+  max-height: 35vh;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test-img {
+  margin: 10px;
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.test {
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .fab {
+  padding: 10px;
+}
+
+.footer .fab:hover {
+  color: #39B89E;
 }
