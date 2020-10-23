@@ -100,6 +100,7 @@ main {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
+  padding: 20px;
 }
 
 .right {
@@ -113,7 +114,7 @@ main {
 }
 
 .testimonial-wrapper {
-  width: 70%;
+  width: 75%;
   margin: 20px auto;
 }
 
@@ -171,4 +172,30 @@ main {
 
 .footer .fab:hover {
   color: #39B89E;
+}
+
+.main-about {
+  width: 95%;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-container {
+  width: 40%;
+  margin: 35px 50px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.info-container h2 {
+  font-size: 65px;
+  color: #39B89E;
+}
+
+.info-container p {
+  font-size: 40px;
 }
