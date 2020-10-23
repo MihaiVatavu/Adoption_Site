@@ -192,10 +192,78 @@ main {
 }
 
 .info-container h2 {
+  margin-bottom: 1rem;
   font-size: 65px;
   color: #39B89E;
 }
 
 .info-container p {
-  font-size: 40px;
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+
+.info-container .address p {
+  font-size: 1.7em;
+}
+
+.contact {
+  position: relative;
+  width: 30%;
+  margin: 35px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  left: 5%;
+}
+
+.contact h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 65px;
+}
+
+.input-group {
+  margin: 1rem auto;
+  min-width: 500px;
+}
+
+.input-group label {
+  font-size: 1.5em;
+}
+
+.input-group #message {
+  position: relative;
+  width: 75%;
+  left: 10%;
+  padding: 10px;
+  border: 2px solid #39B89E;
+  outline: none;
+}
+
+input {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+  padding: 10px;
+  width: 75%;
+  left: 10%;
+  border: 2px solid #39B89E;
+  outline: none;
+}
+
+#btn {
+  border: none;
+  background: #39B89E;
+  color: #ffffff;
+}
+
+#btn:hover {
+  background: rgba(57, 184, 158, 0.85);
 }
