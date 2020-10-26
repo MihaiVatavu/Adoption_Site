@@ -1,74 +1,18 @@
-$white:#ffffff;
-$black:#000000;
-$color:#39B89E;
 
-*{
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-}
+@import 'header';
 
-// Header
-
-// Page one
-.header{
-  width:90%;
-
-  .navbar{
-    width:100%;
-    height:7vh;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav{
-    width:30%;
-
-  }
-
-  .list{
-    display:flex;
-    justify-content: space-around;
-  }
-
-  li{
-    list-style: none;
-    padding:5px;
-  }
-
-  li:hover{
-    padding:0;
-    border-bottom:5px solid $color ;
-  }
-
-  .current{
-    border-bottom:5px solid $color 
-  }
-  li > a{
-    text-decoration: none;
-    color: $black;
-  }
-
-  .logo{
-    margin-left:75px ;
-  }
-}
 
 // Main section
 main{
-  width:100%;
-  height:50vh;
-  margin:35px 50px;
+  width: 95%;
+  height:50vh;  
+  margin:35px 70px;
   display:flex;
 }
 
 // Title and call to action
 .left{
-  padding-left:25px;
+  padding-left: 50px;
   width:50%;
 
   .hero-title{
@@ -85,7 +29,7 @@ main{
   .cta{
     margin-top:50px;
     padding:10px 50px;
-    background-color: $color;
+    background-color: $color; 
     border:none;
     cursor: pointer;
     box-shadow: 1px 2px 5px;
@@ -101,13 +45,12 @@ main{
 
 .right{
   top:20px;
+}
 
-
-  .front-image{
-    max-width:700px;
-    max-height: 700px;
-    border-radius: 90px;
-  }
+.right #doggie{
+  width:750px;
+  height: 500px;
+  padding-bottom: 20px;
 }
 
 // testimonial
@@ -129,7 +72,6 @@ main{
   display:flex;
   flex-direction: column;
   align-items:center;
-
 }
 
 
@@ -162,95 +104,4 @@ padding:10px;
   }
 }
 
-// About page
 
-// Info section
-
-.main-about{
-  width:95%;
-  height: 85vh;
-  display:flex;
-
-}
-
-.info-container{
-  width:40%;
-  margin:35px 50px;
-}
-
-.about{
-  margin-bottom:50px;
-}
-
-.info-container h2{
-  margin-bottom:1rem;
-  font-size:65px;
-  color:$color;
-}
-
-.info-container p{
-  font-size: 1.3em;
-  font-weight: lighter;
-}
-
-.info-container .address p{
-  font-size:1.7em;
-}
-
-// Form section
-
-.contact{
-  position: relative;
-  width:30%;
-  margin:35px auto;
-  display:flex;
-  flex-direction: column;
-  align-items: flex-end;
-  left: 5%;
-}
-
-.contact h2{
-  width:100%;
-  text-align: center;
-  font-size:65px;
-}
-
-.input-group{
-  margin: 1rem auto;
-  min-width:500px;
-}
-
-.input-group label{
-  font-size:1.5em;
-}
-
-
-.input-group  #message{
-  position: relative;
-  width: 75%;
-  left: 10%;
-  padding: 10px;
-  border:2px solid $color;
-  outline: none;
-}
-
-input{
-  margin-top: 20px;
-  position: relative;
-  display:block;
-  padding:10px;
-  width:75%;
-  left:10%;
-  border:2px solid $color;
-  outline: none;
-}
-
-#btn{
-  border: none;
-  background: $color;
-  color:$white;
-}
-
-#btn:hover{
- background:rgba(57, 184, 158, 0.85);
-}
