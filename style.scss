@@ -6,33 +6,39 @@
 main{
   width: 95%;
   height:50vh;  
-  margin:35px 70px;
+  margin:1.5em 1em;
   display:flex;
 }
 
 // Title and call to action
 .left{
-  padding-left: 50px;
+  padding-left: 5.5em;
   width:50%;
 
   .hero-title{
-    font-size:80px;
+    font-size:4.5em;
     font-weight: 200;
   }
 
   .hero-title span{
-    font-size:100px;
+    font-size:1.2em;
     font-weight: 600;
     color:$color;
   }
 
   .cta{
-    margin-top:50px;
-    padding:10px 50px;
+    margin-top:1.5em;
+    padding:0.5em 2em;
     background-color: $color; 
     border:none;
     cursor: pointer;
+    font-size: 1.5em;
     box-shadow: 1px 2px 5px;
+    
+  }
+
+  .cta:hover{
+    opacity: 0.9;
   }
 
   .cta a{
@@ -45,11 +51,12 @@ main{
 
 .right{
   top:20px;
+  width:50%;
 }
 
 .right #doggie{
-  width:750px;
-  height: 500px;
+  width:75%;
+  height: 90%;
   padding-bottom: 20px;
 }
 
@@ -88,20 +95,73 @@ padding:10px;
 
 // Footer
 
-.footer{
-  width:100%;
-  height: 5vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
- 
-  .fab{
-    padding:10px;
-  }
+@import "footer";
 
-  .fab:hover{
-    color:$color;
+@media all and(max-width:900px){
+
+  main{
+    width: 100%;
+    margin:20px;  
+
+    .left{
+      .hero-title{
+        font-size:3.5em;
+        font-weight: 200;
+        }
+    }
+    
+    
+    
+      .right #doggie{
+      width:95%;
+      height: 90%;
+      padding-bottom: 20px;
+      }
   }
 }
 
+@media all and(max-width:600px){
+ 
+  main{
+    margin:20px;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
+    .left{
+      width:90%;
+      padding:15px;
+    }
+    .right{
+      display: none;
+    }
+  }
+
+  .testimonial-wrapper{
+    width:75%;
+    position: relative;
+    margin:20px auto;
+
+    .testimonial-container{
+      width:100%;
+      height: 700px;
+      margin:10px auto;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      overflow: auto;
+      .testimonial{
+        height: 32%;
+        .test-img{
+          margin: 5px;
+          width:45px;
+          height:45px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+}
