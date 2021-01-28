@@ -1,0 +1,54 @@
+.footer{
+  background-color: $color;
+  color:$black;
+
+  .section{
+    display:flex;
+    justify-content: space-around;
+    width:75%;
+    margin:0 auto;
+    padding:0.5rem;
+
+    @media(max-width:576px){
+      padding:0.2rem;
+    }
+    
+    a{
+      text-decoration: none;
+      color:$black;
+    }
+
+    a:hover{
+      color:$back;
+    }
+    a:focus{
+      color:$back;
+    }
+  }
+
+  .contact{
+    display: inline-block;
+    width:100%;
+    margin:0 auto;
+    padding:0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color:$black;
+  }
+
+  .contact:hover{
+    color:$back;
+  }
+  .contact:focus{
+    color:$back;
+  }
+
+  @media(max-width:576px){
+    font-size:0.8rem;
+  }
+
+}
+
+.display-non{
+  display: none;
+}

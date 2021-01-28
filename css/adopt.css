@@ -1,218 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 * {
-  padding: 0%;
-  margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.home {
+body {
   background-color: #F8FCFF;
+  scroll-behavior: smooth;
 }
 
-.header {
-  width: 85%;
+.navbar {
+  padding: 20px;
+  background-color: #39B89E;
 }
 
-.header .navbar {
-  width: 100%;
-  height: 7vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.navbar .container-fluid {
+  width: 97%;
 }
 
-.header .logo {
-  position: relative;
-  left: 40px;
-}
-
-.header nav {
+.navbar .container-fluid .collapse {
   width: 30%;
+  float: right;
 }
 
-.header .list {
+.navbar .container-fluid .collapse .navbar-nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .custom {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .custom:hover {
+  color: #F8FCFF;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .current {
+  border-bottom: 5px solid #F8FCFF;
+}
+
+.navbar .navbar-toggler.custom-toggler {
+  border-color: #000000;
+  color: #39B89E;
+  background-color: #39B89E;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.sticky-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: auto;
+  }
+  .navbar .container-fluid {
+    width: 85%;
+  }
+  .navbar .container-fluid .collapse {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .navbar .container-fluid .collapse .navbar-nav .custom {
+    width: 50%;
+    margin: 0.5rem auto;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  background-color: #39B89E;
+  color: #000000;
+}
+
+.footer .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
-.header li {
-  list-style: none;
-  padding: 5px;
+@media (max-width: 576px) {
+  .footer .section {
+    padding: 0.2rem;
+  }
 }
 
-.header li:hover {
-  padding: 0;
-  border-bottom: 5px solid #39B89E;
-}
-
-.header .current {
-  border-bottom: 5px solid #39B89E;
-}
-
-.header li > a {
+.footer .section a {
   text-decoration: none;
   color: #000000;
 }
 
-.header .logo {
-  margin-left: 75px;
+.footer .section a:hover {
+  color: #F8FCFF;
 }
 
-@media all and (max-width: 600px) {
-  * {
-    font-size: 13px;
-  }
-  .header {
-    width: 95%;
-    height: 200px;
-  }
-  .header .navbar {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .header .navbar .logo {
-    display: none;
-  }
-  .header .navbar nav {
-    width: 100%;
-    height: 100%;
-  }
-  .header .navbar .list {
-    width: 100%;
-    height: 95%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .header .navbar .list li {
-    height: 25px;
-    width: 75%;
-    font-size: 10px;
-    text-align: center;
-  }
+.footer .section a:focus {
+  color: #F8FCFF;
 }
 
-.container {
-  width: 75%;
-  height: 75vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 2em auto;
-  overflow-x: scroll;
-}
-
-.cats,
-.dogs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card {
-  width: 330px;
-  height: 300px;
-  margin: 1em;
-  -webkit-box-shadow: 1px 1px 10px 2px;
-          box-shadow: 1px 1px 10px 2px;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-.card p {
+.footer .contact {
+  display: inline-block;
   width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
   text-align: center;
-  margin-top: 15px;
+  text-decoration: none;
+  color: #000000;
 }
 
-img {
-  height: auto;
-  width: auto;
-  max-width: 350px;
-  max-height: 250px;
+.footer .contact:hover {
+  color: #F8FCFF;
 }
 
-.card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.footer .contact:focus {
+  color: #F8FCFF;
 }
 
-.footer {
-  width: 100%;
-  height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer .fab {
-  padding: 10px;
-}
-
-.footer .fab:hover {
-  color: #39B89E;
-}
-
-@media all and (max-width: 600px) {
-  .container {
-    width: 85%;
-    height: 75vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 2em auto;
-    overflow-x: scroll;
+@media (max-width: 576px) {
+  .footer {
+    font-size: 0.8rem;
   }
+}
+
+.display-non {
+  display: none;
 }

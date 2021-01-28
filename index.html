@@ -3,76 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="Assets/fruandfluff2.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Fur and fluff</title>
 </head>
 
-<body class="home">
+<body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="navbar">
-      <div class="logo">
-        <img src="Assets/fruandfluff2.png" alt="Fur and fluff loge image">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://" target="_blank">Furr and Fluff</a>
+      <button type="button" class="navbar-toggler custom-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <div class="navbar-nav text-center">
+
+          <a class="nav-item nav-link current custom" href="/index.html">Home</a>
+
+          <a class="nav-item nav-link custom" aria-current="page" href="/about.html">Contact Us</a>
+
+          <a class="nav-item nav-link custom" href="/adopt.html">Adopt</a>
+
+        </div>
       </div>
-      <nav>
-        <ul class="list">
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="adopt.html">Adopt</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
-  <!-- Main section -->
-  <main>
-    <section class="left">
-      <h1 class="hero-title">
-        A Pet <br>
-        wants to meet <br>
-        <span>you</span>
-      </h1>
-      <button class="cta"><a href="about.html">Contact Us</a></button>
+  </nav>
+
+  <!-- Main -->
+
+  <!-- Title and image -->
+  <main class="container-fluid custom-main">
+    <section class="row">
+      <div class="col-xl-5  title-section">
+        <h1 class="title">A Pet<br>
+          Wants to Meet<br>
+          <span> you</span>
+        </h1>
+        <a href="#" class="align-self-center"><button class="cta">Contact Us</button></a>
+      </div>
+      <div class="col-xl-7  img-section">
+        <img src="/Assets/dog-index.jpg" alt="Dog image">
+      </div>
     </section>
-    <section class="right">
-      <img src="Assets/dog-index.jpg" alt="Dog image" id="doggie">
+    <!-- Carusel -->
+    <section class="container-fluid carousel">
+      <!-- <section class="row"> -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="/Assets/cat_one.jpg" alt="First testimonial cat image">
+            <h4>Helga</h4>
+            <p class="testimonial-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, sint id? Vitae
+              voluptatibus dolor veniam aperiam impedit atque doloribus voluptatum!</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/Assets/cat_two.jpg" alt="First testimonial cat image">
+            <h4>Misha</h4>
+            <p class="testimonial-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, sint id? Vitae
+              voluptatibus dolor veniam aperiam impedit atque doloribus voluptatum!</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/Assets/cat_three.jpg" alt="First testimonial cat image">
+            <h4>Miau</h4>
+            <p class="testimonial-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, sint id? Vitae
+              voluptatibus dolor veniam aperiam impedit atque doloribus voluptatum!</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/Assets/cat_one.jpg" alt="First testimonial cat image">
+            <h4>Laila</h4>
+            <p class="testimonial-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, sint id? Vitae
+              voluptatibus dolor veniam aperiam impedit atque doloribus voluptatum!</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/Assets/cat_two.jpg" alt="First testimonial cat image">
+            <h4>Cojones</h4>
+            <p class="testimonial-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, sint id? Vitae
+              voluptatibus dolor veniam aperiam impedit atque doloribus voluptatum!</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="/Assets/cat_three.jpg" alt="First testimonial cat image">
+            <h4>Ricky</h4>
+            <p class="testimonial-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, sint id? Vitae
+              voluptatibus dolor veniam aperiam impedit atque doloribus voluptatum!</p>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination">123 </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
     </section>
   </main>
-  <!-- Testimonial-->
-  <div class="testimonial-wrapper">
-    <div class="testimonial-container">
-      <div class="testimonial">
-        <img src="Assets/cat_one.jpg" class="test-img"><span>Foxy</span>
-        <p class="test"> "the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen
-          book. It has survived not only five centuries"</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="/Assets/cat_two.jpg" class="test-img"><span>Kitty</span>
-        <p class="test"> "the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen
-          book. It has survived not only five centuries"</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Assets/cat_three.jpg" class="test-img"><span>Laila</span>
-        <p class="test"> "the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen
-          book. It has survived not only five centuries"</p>
-      </div>
-    </div>
-  </div>
   <!-- Footer -->
-  <footer class="footer">
-    <i class="fab fa-twitter fa-2x"></i>
-    <i class="fab fa-facebook fa-2x"></i>
-    <i class="fab fa-instagram fa-2x"></i>
+  <footer class="container-fluid footer" id="footer">
+    <div class="section copy">
+      <p>Copyright ©</p>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms of Use</a>
+    </div>
+    <div class="section social">
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-plus fa-2x"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <a href="" class="contact">Contact Us</a>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/swiper.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

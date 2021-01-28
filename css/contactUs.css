@@ -145,110 +145,62 @@ body {
   display: none;
 }
 
-.custom-main {
-  width: 95%;
-  margin: 0.5rem auto;
-}
-
-.custom-main .title-section {
-  margin: 7% 0;
-}
-
-@media (max-width: 1024px) {
-  .custom-main .title-section a {
-    margin: 0 auto;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+@media (max-width: 568px) {
+  body {
+    padding-bottom: 10%;
   }
 }
 
-.custom-main .title-section a .cta {
-  padding: 0.5rem 4rem;
-  background-color: #39B89E;
-  color: #F8FCFF;
-  font-size: 1.75rem;
-  font-weight: 900;
-  outline: none;
-  border: none;
-  margin: 2rem 0;
+.row {
+  margin: 1.2rem auto;
 }
 
-@media (max-width: 768px) {
-  .custom-main .title-section a .cta {
-    width: 100%;
-  }
+.row .customRow {
+  width: 75%;
+  margin: 1rem auto;
+  font-size: 1.5rem;
 }
 
-.custom-main .title-section .cta:hover {
-  opacity: 0.9;
-}
-
-.custom-main .title-section .cta:focus {
-  opacity: 0.9;
-}
-
-.custom-main .title-section .title {
-  font-size: 4.5rem;
-}
-
-@media (min-width: 1440px) {
-  .custom-main .title-section .title {
-    font-size: 6rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .custom-main .title-section .title {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .custom-main .title-section .title {
-    font-size: 5rem;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-.custom-main .title-section .title span {
-  color: #39B89E;
-  font-weight: 900;
-}
-
-.custom-main .img-section img {
-  width: 100%;
-  min-width: 500px;
-}
-
-.carousel {
+.row .customRow h2 {
+  font-size: 2rem;
+  font-weight: 700;
   padding: 1rem 0;
 }
 
-.carousel .swiper-container {
-  width: 95%;
-  height: 500px;
+.contactUS {
+  margin: 1.2rem auto;
 }
 
-.carousel .swiper-container .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.contactUS h2 {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 700;
 }
 
-.carousel .swiper-container .swiper-slide img {
-  width: 100px;
-  border-radius: 45%;
-  margin: 1rem;
+.contactUS .contactRow {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.contactUS .contactRow label, .contactUS .contactRow input, .contactUS .contactRow textarea {
+  font-size: 1.5rem;
+}
+
+.contactUS .contact {
+  width: 100%;
+}
+
+.contactUS .contact .btn {
+  width: 50%;
+  margin: 1rem auto;
+  background-color: #39B89E;
+  border: none;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+  padding: 0.5rem;
+}
+
+.contactUS .contact .btn:hover {
+  opacity: 0.8;
 }

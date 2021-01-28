@@ -3,77 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="Assets/fruandfluff2.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/contactUs.css">
   <title>About</title>
 </head>
 
 <body>
 
-  <body class="home">
-    <header class="header">
-      <div class="navbar">
-        <div class="logo">
-          <img src="Assets/fruandfluff2.png" alt="Fur and fluff loge image">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://" target="_blank">Furr and Fluff</a>
+      <button type="button" class="navbar-toggler custom-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+
+        <div class="navbar-nav text-center">
+
+          <a class="nav-item nav-link custom" href="/index.html">Home</a>
+
+          <a class="nav-item nav-link  current custom" aria-current="page" href="/about.html">Contact Us</a>
+
+          <a class="nav-item nav-link custom" href="/adopt.html">Adopt</a>
+
         </div>
-        <nav>
-          <ul class="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="adopt.html">Adopt</a></li>
-            <li class="current"><a href="about.html">About</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <main class="main-about">
-      <section class="info-container">
-        <div class="about">
-          <h2>About Us</h2>
-          <p>
-            en an unknown printer took a galley of type and scrambled it to make a type
-            specimen
-            book. It has survived not only five centuries
-          </p>
-        </div>
-        <div class="address">
-          <h2>Address</h2>
-          <p>
-            Fur and Fluff <br>
-            123 London Road <br>
-            London W2 7MV <br>
-            England</p>
-        </div>
-        <div class="phone">
-          <h2>Phone Number</h2>
-          <p>020 7946 0440</p>
-        </div>
-      </section>
-      <section class="contact">
-        <h2>Contact Us </h2>
-        <form action="" class="contactus">
-          <div class="input-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+  </nav>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="row customRow">
+          <div class="col">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore numquam nesciunt error
+              provident impedit architecto maxime molestias, officia ullam amet expedita doloremque sequi eum?</p>
           </div>
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="row customRow">
+          <div class="col">
+            <h2>Address</h2>
+            <p>Furr and Fluff</p>
+            <p>123 London Road</p>
+            <p>London W2 12AB</p>
+            <p>United Kingdom</p>
           </div>
-          <div class="input-group">
-            <label for="message">Your message</label>
-            <textarea id="message" rows="5" cols="40" placeholder="Enter your message here"></textarea>
+        </div>
+        <div class="row customRow">
+          <div class="col">
+            <h2>Telephone</h2>
+            <p>0123-456-789</p>
           </div>
-          <input type="submit" value="Send" id="btn">
+        </div>
+      </div>
+      <div class="col-xl-6 contactUS">
+        <h2>Contact Us</h2>
+        <form action="" class="needs-validation contact" novalidate>
+          <div class="contactRow">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="John" required>
+            <div class="invalid-feedback">Please enter your name</div>
+          </div>
+          <div class="contactRow">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="johndoe@email.com" required>
+            <div class="invalid-feedback">Please enter your email</div>
+          </div>
+          <div class="contactRow">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" id="message" cols="30" rows="8" class="form-control"
+              placeholder="Enter your message here" required></textarea>
+            <div class="invalid-feedback">Please enter your message</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Send</button>
         </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <i class="fab fa-twitter fa-2x"></i>
-      <i class="fab fa-facebook fa-2x"></i>
-      <i class="fab fa-instagram fa-2x"></i>
-    </footer>
-  </body>
+      </div>
+    </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="container-fluid footer" id="footer">
+    <div class="section copy">
+      <p>Copyright ©</p>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms of Use</a>
+    </div>
+    <div class="section social">
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-plus fa-2x"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <a href="" class="contact">Contact Us</a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/formValid.js"></script>
+</body>
 
 </html>
