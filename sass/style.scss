@@ -73,7 +73,7 @@
     
     img{
       width:100%;
-      min-width:500px;
+      min-width:320px;
     }
   }
 }
@@ -84,17 +84,37 @@
   .swiper-container{
     width:95%;
     height:400px;
+    
+    // @media(max-width:568px){
+    //   margin:1rem auto;
+    // }
   
     .swiper-slide{
       display:flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-  
+      @media(max-width:568px){
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 0.9rem;
+      }
+      
+      h4{
+        @media(max-width:568px){
+          font-size:1rem;
+          font-weight: 900;
+        }
+      }
+
        img{
          width:100px;
          border-radius:45%;
          margin:1rem;
+
+         @media(max-width:568px){
+           width:75px;
+         }
        }
     }
   
