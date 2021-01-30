@@ -222,13 +222,9 @@ body {
   min-width: 500px;
 }
 
-.carousel {
-  padding: 1rem 0;
-}
-
 .carousel .swiper-container {
   width: 95%;
-  height: 500px;
+  height: 400px;
 }
 
 .carousel .swiper-container .swiper-slide {
@@ -251,4 +247,8 @@ body {
   width: 100px;
   border-radius: 45%;
   margin: 1rem;
+}
+
+.carousel .swiper-container .arrow {
+  color: #39B89E;
 }

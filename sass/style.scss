@@ -81,10 +81,9 @@
 // Carousel
 
 .carousel{
-  padding:1rem 0;
   .swiper-container{
     width:95%;
-    height:500px;
+    height:400px;
   
     .swiper-slide{
       display:flex;
@@ -99,6 +98,9 @@
        }
     }
   
+    .arrow{
+      color:$color;
+    }
   }
 }
 

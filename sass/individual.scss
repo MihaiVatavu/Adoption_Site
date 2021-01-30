@@ -1,0 +1,73 @@
+@import '_header'; 
+@import '_footer';
+
+.customMain{
+  width:95%;
+
+
+  .mainRow{
+    margin:2.5rem auto;
+
+    .text{
+      
+      h1{
+        width:100%;
+        text-align: center;
+        padding:1rem;
+        font-weight: 700;
+        font-size:3.5rem;
+      }
+  
+      p{
+        font-size:1.5rem;
+        padding:1rem 3rem;
+
+        @media(max-width:568px){
+          padding:1rem;
+          font-size:1.1rem;
+        }
+      }
+
+      .btnLink{
+        width:33%;
+        display: inline-block;
+        padding:1rem;
+        margin:1rem 3rem;
+        font-size:2rem;
+        text-align: center;
+        background-color: $color;
+        text-decoration: none;
+        color:$back;
+
+        @media(max-width:624px){
+          padding:1rem;
+          width:95%;
+          font-size:1.1rem;
+          margin:1rem;
+        }
+
+      }
+    }
+  
+    .images{
+  
+      .row{
+  
+  
+  
+        .img-fluid{
+          max-width:550px;
+          margin:1rem auto;
+        }
+      }
+  
+      
+  
+    }
+  }
+
+  
+
+  
+
+}
